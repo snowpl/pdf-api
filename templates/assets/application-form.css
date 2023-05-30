@@ -1,0 +1,158 @@
+body {
+  /* font-family: 'Public Sans', sans-serif; */
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  position: relative;
+  color: #0e334a;
+  background-color: #ffffff;
+  width: 21cm;
+  height: 29.715cm;
+  margin: auto;
+}
+
+.cover-container {
+  padding: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cover-content {
+  position: absolute;
+  margin-top: 30%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.cover-content > h2 {
+  color: #2e9c8e;
+  font-size: 40px;
+}
+
+.cover-content > span {
+  line-height: 32px;
+  font-size: 20px;
+}
+
+.cover-footer {
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  bottom: 0;
+  background-color: #2e9c8e;
+}
+
+.content-container {
+  padding: 24px;
+}
+
+.content-container > h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.header {
+  color: #2e9c8e;
+  line-height: 37px;
+  font-size: 32px;
+}
+
+.table-of-contents-container {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  top: 20%;
+  padding: 16px;
+  width: 85%;
+}
+
+.table-of-contents-container > h3 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+.table-of-contents-container > div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+}
+
+.content > div {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e9eaea;
+  height: 40px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.content > div:last-child {
+  border-bottom: none;
+}
+
+.content > div > span:first-child {
+  font-weight: bold;
+  width: 40%;
+  margin-right: 16px;
+}
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.footer-logo {
+  color: #ffffff;
+  background-color: #003e52;
+  font-size: 40px;
+  padding: 16px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bar {
+  background-color: #2e9c8e;
+  height: 10px;
+}
+
+.page-break {
+  page-break-after: always;
+}
+
+.container {
+  padding: 40px 40px 0 40px;
+}
+
+.child-section-container {
+  border-top: 1px solid #e9eaea;
+}
+
+.child-section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

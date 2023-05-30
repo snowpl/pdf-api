@@ -1,0 +1,402 @@
+@import './fonts/RN House Sans W03/stylesheet.css';
+@import './_normalize.css';
+@import './_common.css';
+
+.container {
+  padding: 0 1.5cm;
+}
+
+.page-top-gap {
+  padding-top: 1.5cm;
+}
+
+a,
+a:hover {
+  color: inherit;
+}
+table {
+  width: 100%;
+  font-size: 12px;
+  line-height: 14px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+table th,
+table td {
+  padding: 2px 4px;
+}
+table th:after,
+table td:after {
+  content: '\00A0';
+}
+table .text-sm {
+  font-size: 10px;
+  line-height: 12px;
+}
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #cdcdcd;
+}
+
+.table-striped thead tr,
+.table-striped tr:nth-child(2n) {
+  background-color: #ececed;
+}
+
+.table-columns-4 td:first-child,
+.table-columns-4 td:nth-child(3) {
+  width: 40%;
+}
+
+.table-columns-4 td:nth-child(2),
+.table-columns-4 td:last-child {
+  width: 10%;
+}
+
+.table-wrapper {
+  margin: 0 -10px;
+}
+.table-wrapper .box ul {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.container .table-wrapper .box {
+  width: 100%;
+  margin-bottom: 0;
+}
+.bank-two-cell {
+  border-collapse: separate;
+  border-spacing: 10px 0;
+}
+.bank-two-cell td {
+  width: 50%;
+}
+.bank-two-cell .label td {
+  padding: 7px 0 0;
+  text-align: left;
+  color: #808082;
+}
+.bank-two-cell .value td {
+  text-align: left;
+  padding-left: 10px;
+}
+.bank-two-cell .grey-cell {
+  background-color: #ececed;
+}
+.bank-two-cell tr {
+  color: #000;
+}
+.bank-two-cell tr td,
+.bank-two-cell tr th {
+  text-align: center;
+  font-weight: normal;
+  padding: 5px 2px 3px;
+}
+@media print {
+  .bank-row tr td,
+  .bank-row tr th,
+  .bank-two-cell tr td,
+  .bank-two-cell tr th,
+  .bank-half-cell tr td,
+  .bank-half-cell tr th {
+    -webkit-print-color-adjust: exact;
+  }
+}
+.bank-row tr th:first-child,
+.bank-two-cell tr th:first-child,
+.bank-half-cell tr th:first-child {
+  background-color: transparent;
+}
+@media print {
+  .bank-row tr th:first-child,
+  .bank-two-cell tr th:first-child,
+  .bank-half-cell tr th:first-child {
+    -webkit-print-color-adjust: exact;
+  }
+}
+.bank-row tr th:not(:first-child),
+.bank-two-cell tr th:not(:first-child),
+.bank-half-cell tr th:not(:first-child) {
+  vertical-align: top;
+}
+.bank-row .icon-info,
+.bank-two-cell .icon-info,
+.bank-half-cell .icon-info {
+  margin-left: 5px;
+}
+
+.entity-verification-table td:first-child,
+.entity-verification-table td:nth-child(2),
+.table-body-center-2n td:nth-child(2n),
+.table-body-center td:not(:first-child) {
+  text-align: center;
+}
+
+.container p,
+.container b,
+.container strong,
+.container ul,
+.container hr,
+.container .box {
+  margin-bottom: 10px;
+}
+.container b,
+.container strong {
+  display: inline-block;
+}
+.container hr {
+  margin-top: 0;
+  border: 1px solid;
+}
+.container .box {
+  padding: 10px;
+  border: 2px solid;
+}
+.container .h3-style {
+  font-weight: normal;
+  color: #143377;
+}
+.container .grey-line {
+  position: relative;
+  padding-bottom: 10px;
+}
+.container .grey-line::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 2px;
+  background-color: #cdcdcd;
+}
+.container .bank-article p {
+  color: #808082;
+  margin-bottom: 10px;
+}
+.container .bank-article p:last-child {
+  margin-bottom: 20px;
+}
+
+.marketing-info,
+.personal-assets,
+.contact-details,
+.existing-business,
+.business-financials,
+.wrap-business-term-loan,
+.wrap-business-info {
+  margin-bottom: 30px;
+}
+.marketing-info .value-margin,
+.personal-assets .value-margin,
+.contact-details .value-margin,
+.existing-business .value-margin,
+.business-financials .value-margin,
+.wrap-business-term-loan .value-margin,
+.wrap-business-info .value-margin {
+  margin-bottom: 25px;
+}
+
+.wrap-business-financials p {
+  padding: 0;
+}
+.ulster-logo-holder {
+  display: inline-block;
+}
+
+.main-page {
+  font: 14px sans-serif;
+  min-height: 100vh;
+  padding-top: 3.5cm;
+  display: flex;
+  flex-direction: column;
+}
+.main-page .small-text {
+  padding-bottom: 50px;
+  line-height: 0.9;
+  font-weight: bold;
+}
+.main-page .small-text small {
+  font-size: 65%;
+}
+.main-page .main-header {
+  flex-grow: 1;
+}
+.main-page .main-header .grey-line-top {
+  position: relative;
+}
+.main-page .main-header .grey-line-top::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  width: 100%;
+  height: 2px;
+  background-color: #cdcdcd;
+}
+.main-page .main-header .padding-top {
+  padding-top: 150px;
+}
+.main-page .main-header .container p {
+  padding: 0;
+}
+.main-page .main-header .container small {
+  font-size: 70%;
+}
+.main-page .main-header .container .content {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #303030;
+}
+.main-page .main-header .container .content .grey-line-bottom {
+  position: relative;
+  padding-top: 50px;
+  margin-bottom: 0;
+}
+.main-page .main-header .container .content .grey-line-bottom::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 1px;
+  background-color: #cdcdcd;
+}
+.main-page .main-header .container .content .text-sm {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.main-page .main-header .container .content p {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 50px;
+  font-family: sans-serif;
+}
+.main-page .main-header .container .content p:last-child {
+  position: relative;
+}
+.main-page .main-header .container .content p:last-child::before {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  height: 2px;
+  background-color: #cdcdcd;
+}
+.main-page .main-header .container .content li {
+  color: #00236a;
+}
+@media print {
+  .main-page .main-header {
+    -webkit-print-color-adjust: exact;
+  }
+}
+.main-page .footer-ulster {
+  width: 100%;
+  height: 100px;
+  background-color: #00246a;
+  margin: 0 auto;
+  text-align: left;
+}
+.main-page .footer-ulster .wrap-logo-text {
+  text-align: right;
+  padding: 20px 50px 0 0;
+}
+.main-page .footer-ulster .wrap-logo-text a {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.business-lending p,
+.business-lending strong,
+.business-lending li {
+  font-size: 12px;
+  line-height: 13px;
+}
+.business-lending .h2 {
+  font-size: 1.5em;
+}
+.business-lending ul,
+.business-lending ol {
+  padding-left: 1em;
+}
+.business-lending ul li,
+.business-lending ol li{
+  margin-bottom: 4px;
+}
+.business-lending .contents-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bank-info .wrap-business-info {
+  margin-bottom: 30px;
+}
+.bank-info .wrap-business-term-loan .value-margin {
+  margin-bottom: 25px;
+}
+.bank-info .wrap-business-term-loan .value-padding {
+  padding-bottom: 25px;
+}
+
+.about-business .wrap-business-term-loan .value-padding {
+  padding-bottom: 25px;
+}
+.about-business table,
+.about-business .block-info {
+  font-size: 11px;
+  line-height: 12px;
+}
+.about-business .block-info ul {
+  padding-left: 20px;
+}
+.share-info h4 {
+  font-size: 1.17em;
+}
+.share-info ol {
+  padding-left: 1em;
+}
+.share-info .share-your-information-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.marketing-info-table {
+  margin-bottom: 10px;
+}
+.marketing-info-table tr:first-child th {
+  padding-bottom: 5px;
+}
+.marketing-info-table tr:first-child td {
+  border-top: 1px solid #f0f0f0;
+}
+.marketing-info-table tr:last-child th {
+  padding-top: 0;
+  padding-bottom: 3px;
+}
+.marketing-info-table tr:last-child th:not(:first-child) {
+  width: 50px;
+}
+.marketing-info-table tr th,
+.marketing-info-table tr td {
+  padding: 6px;
+  text-align: center;
+}
+.marketing-info-table tr th:first-child,
+.marketing-info-table tr td:first-child {
+  text-align: left;
+}
+.marketing-info-table tr th:last-child,
+.marketing-info-table tr td:last-child {
+  padding-right: 4px;
+  width: 50px;
+}
+.marketing-info-table tr td {
+  border-bottom: 1px solid #f0f0f0;
+  color: #333;
+  line-height: 14px;
+}
+.marketing-info-table tr td:first-child {
+  color: #515151;
+}
